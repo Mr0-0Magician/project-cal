@@ -14,31 +14,31 @@
           </td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><button @click="digit(7)" class="digit">7</button></td>
+          <td><button @click="digit(8)" class="digit">8</button></td>
+          <td><button @click="digit(9)" class="digit">9</button></td>
+          <td><button @click="delete1" class="oprator">C</button></td> 
+          <td><button @click="removing" class="oprator">←</button></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><button @click="digit(4)" class="digit">4</button></td>
+          <td><button @click="digit(5)" class="digit">5</button></td>
+          <td><button @click="digit(6)" class="digit">6</button></td>
+          <td><button @click="division" class="oprator">÷</button></td>
+          <td><button @click="remaining" class="oprator">%</button></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><button @click="digit(1)" class="digit">1</button></td>
+          <td><button @click="digit(2)" class="digit">1</button></td>
+          <td><button @click="digit(3)" class="digit">1</button></td>
+          <td><button @click="Multiplication" class="oprator">x</button></td>
+          <td><button @click="sum" class="oprator">+</button></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td colspan="2"><button @click="digit(0)" class="digit">1</button></td>
+          <td><button @click="Submission" class="oprator">-</button></td>
+          <td><button @click="decimal" class="oprator">.</button></td>
+          <td><button @click="equal" class="oprator">=</button></td>
         </tr>
     </table>
   </div>
@@ -92,7 +92,7 @@ import { propsToAttrMap } from '@vue/shared';
       removing() {
         this.screen = this.screen.slice(1);
       },
-      delete() {
+      delete1() {
         this.screen = "";
       },
       Multiplication() {
