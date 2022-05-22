@@ -147,3 +147,51 @@ import { propsToAttrMap } from '@vue/shared';
     }
   }
 </script>
+
+<style scoped>
+
+.digit {
+  background-color:gray;
+  border: 5px solid black;
+  border-radius: 60px;
+  border-bottom: 5px solid;
+  font-size: 20px;  
+
+}
+
+button {
+  width: 95%;
+}
+.oprator {
+  font-size: 20px;  
+  border-bottom: 5px solid;
+  border-radius: 60px;
+}
+.eq {
+  font-size: 20px;
+  border-bottom: 5px solid;
+  background-color:gray;
+  border-bottom: 5px solid;
+  border-top: px solid;
+
+  
+}
+.eq2 {
+  font-size: 20px;
+  border-bottom: 5px solid;
+  background-color:gray;
+  border-bottom: 5px solid;
+  border-top: 5px solid;
+}
+input {
+box-sizing: 50px;
+background-color:rgb(44, 70, 56)
+}
+#calculator{
+  border:  20px solid;
+  border-bottom:rgb(22, 21, 21) 40px solid;
+  border-top: rgb(22, 21, 21) 35px solid ;
+  background-color:rgb(22, 21, 21);
+  border-radius: px ;
+}
+</style>
