@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+# به نام خدا 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## در این پروژه ما فصد داریم تا یک ماشین حساب رو با ویو درست کنیم
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+🎩 How to reach me:
+
+      ✅ Email : mynameiskhoday2@gmail.com
+
+      ✅ instagram : @amir.reza.anamii
+
+![the-end](https://user-images.githubusercontent.com/90989527/153839724-578c36f2-79a4-410a-9167-05b607289750.gif)
+
+
+
