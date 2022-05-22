@@ -5,6 +5,7 @@
         <tr>
           <td colspan="5" >
             <input 
+              v-model="screen"
               style="padding:5px ; text-align: right; "
               type="int , float"
               id="output"
@@ -143,11 +144,6 @@ import { propsToAttrMap } from '@vue/shared';
             break;
         }
       }
-
-      
-
-
-
     }
   }
 </script>
