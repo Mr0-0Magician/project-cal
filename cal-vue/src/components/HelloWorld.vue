@@ -40,6 +40,27 @@
           <td></td>
         </tr>
     </table>
-
   </div>
 </template>
+
+<script>
+import { propsToAttrMap } from '@vue/shared';
+
+  export default {
+    name:"helloworld",
+    props:{
+      msg: String,
+    },
+    //creating values
+    data() {
+      return {
+        screen:"",
+        screen2:"",
+        box1 :Number & Float32Array,
+        box2 :Number & Float32Array,
+        operators : "",
+      };
+    },
+      
+  }
+</script>
