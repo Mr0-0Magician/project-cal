@@ -61,6 +61,47 @@ import { propsToAttrMap } from '@vue/shared';
         operators : "",
       };
     },
+    methods: {
+      //sum = +
+      sum() {
+        this.box1 = parseInt(this.screen, 10);
+        this.operators = "+";
+        this.screen = "";
+      },
+      //empty = ""
+      empty() {
+          this.box1 = parseInt(this.screen , 10);
+          this.operators = "";
+          this.screen = "";
+      },
+      division() {
+        this.box1 = parseInt(this.screen , 10);
+        this.operators = "/";
+        this.screen = "";
+      },
+      Submission() {
+        this.box1 = parseInt(this.screen, 10);
+        this.operators = "-";
+        this.screen = "";      
+      },
+      remaining() {
+        this.box1 = parseInt(this.screen, 10 );
+        this.operators = "%"
+      },
+      removing() {
+        this.screen = this.screen.slice(1);
+      },
+      delete() {
+        this.screen = "";
+      },
+      decimal() {
+        this.screen = this.screen + (".") + this.screen2;
+      },
       
+      
+
+
+
+    }
   }
 </script>
