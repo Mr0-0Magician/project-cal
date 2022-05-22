@@ -94,6 +94,11 @@ import { propsToAttrMap } from '@vue/shared';
       delete() {
         this.screen = "";
       },
+      Multiplication() {
+        this.box1= parseInt(this.screen, 10);
+        this.operators = "*";
+        this.screen = "";
+      },
       digit(n) {
         this.screen += (n)
       },
@@ -101,6 +106,43 @@ import { propsToAttrMap } from '@vue/shared';
       decimal() {
         this.screen = this.screen + (".") + this.screen2;
       },
+      equal() {
+        //making a breakable loop
+        switch (this.operators) {
+          case "+":
+            this.box2 = (this.screen, 10);
+            this.screen = this.box1 + this.box2
+            break;
+          case ("/"):
+            this.box2= (this.screen, 10);
+            this.screen = (this.box1 / this.box2);
+            break;
+          case ("-"):
+            this.box2 = (this.screen, 10);
+            this.screen = (this.box1 - this.box2);
+            break;
+          case ("%"):
+            this.box2 = (this.screen, 10);
+            this.screen = (this.box1 % this.box2);
+            break;
+          case ("*"):
+            this.box2 = (this.screen, 10),
+            this.screen = (this.box1 * this.box2);
+            break;
+          case ("|"):
+            this.screen = this.screen.slice(1);
+            break;
+          case ("C"):
+            this.screen = "";
+            break;
+          //not sure about this 
+          case ("."):
+            this.screen = this.screen + (".") + this.screen2;
+            break
+          default:
+            break;
+        }
+      }
 
       
 
