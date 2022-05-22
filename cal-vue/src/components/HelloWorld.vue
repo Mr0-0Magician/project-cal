@@ -94,10 +94,14 @@ import { propsToAttrMap } from '@vue/shared';
       delete() {
         this.screen = "";
       },
+      digit(n) {
+        this.screen += (n)
+      },
+      
       decimal() {
         this.screen = this.screen + (".") + this.screen2;
       },
-      
+
       
 
 
